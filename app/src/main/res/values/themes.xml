@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NotePadJH" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:textViewStyle">@style/custom2</item>
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.NotePadJH" parent="Base.Theme.NotePadJH" />
+
+</resources>

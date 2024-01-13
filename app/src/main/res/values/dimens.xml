@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Textstorlekar -->
+    <dimen name="head_text_size">32sp</dimen>
+    <dimen name="large_size">24sp</dimen>
+    <dimen name="medium_size">20sp</dimen>
+    <dimen name="small_size">14sp</dimen>
+
+    <!-- Marginaler -->
+    <dimen name="no_width">0dp</dimen>
+    <dimen name="no_height">0dp</dimen>
+
+    <dimen name="side_margin">20dp</dimen>
+    <dimen name="vertical_margin">20dp</dimen>
+
+    <dimen name="spacing">30dp</dimen>
+    <dimen name="switch_side">20dp</dimen>
+    <dimen name="fab_side">20dp</dimen>
+
+    <!-- Padding -->
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="standard_padding">20dp</dimen>
+    <dimen name="large_padding">50dp</dimen>
+
+    <!--Övriga-->
+    <dimen name="elevation">10dp</dimen>
+    <dimen name="small_elevation">5dp</dimen>
+    <dimen name="border">2dp</dimen>
+    <dimen name="small_corner_radius">2dp</dimen>
+
+</resources>

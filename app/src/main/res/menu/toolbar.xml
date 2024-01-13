@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <group
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:enabled="true">
+        <item
+            android:id="@+id/item_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/save"
+            android:title="Save"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/item_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/left"
+            android:title="Back"
+            app:showAsAction="always" />
+    </group>
+</menu>

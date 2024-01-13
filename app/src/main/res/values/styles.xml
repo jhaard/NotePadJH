@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customfontstyle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/nothing_you_could_do</item>
+
+    </style>
+
+    <style name="custom2" parent="@android:style/TextAppearance.Large">
+        <item name="android:fontFamily">@font/permanent_marker</item>
+    </style>
+</resources>

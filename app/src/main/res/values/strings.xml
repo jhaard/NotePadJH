@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">NotePadJH</string>
+    <string name="note_view_text">Edit Note</string>
+    <string name="note_board_head">Note board</string>
+    <string name="light_mode_text">Light mode</string>
+    <string name="fab_add_description">Add note button</string>
+    <string name="title_hint">TITLE</string>
+    <string name="write_note_hint">Write note...</string>
+    <string name="title_text">Title</string>
+</resources>

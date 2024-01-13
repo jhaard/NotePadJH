@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/edit_note_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar_menu"
+        layout="@layout/toolbar_layout" />
+
+    <!-- Rubrik -->
+    <TextView
+        android:id="@+id/note_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/background"
+        android:fontFamily="@font/permanent_marker"
+        android:gravity="center"
+        android:padding="@dimen/standard_padding"
+        android:text="@string/note_view_text"
+        android:textColor="@color/white"
+        android:textSize="@dimen/head_text_size" />
+
+    <!-- Titel för note -->
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:gravity="center"
+        android:hint="@string/title_hint"
+        android:padding="@dimen/standard_padding"
+        android:textColor="@color/ink_blue"
+        android:textColorHint="@color/ink_blue"
+        android:textSize="@dimen/large_size" />
+
+    <!-- Text för note -->
+    <EditText
+        android:id="@+id/et_note_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        android:fontFamily="@font/nothing_you_could_do"
+        android:gravity="start"
+        android:hint="@string/write_note_hint"
+        android:padding="@dimen/standard_padding"
+        android:textColor="@color/ink_blue"
+        android:textColorHint="@color/ink_blue"
+        android:textSize="@dimen/medium_size" />
+
+</LinearLayout>

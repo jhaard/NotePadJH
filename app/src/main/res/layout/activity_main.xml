@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/head_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:ignore="ExtraText">
+
+    <!-- Titel för app -->
+    <TextView
+        android:id="@+id/textView_board_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/elevation"
+        android:fontFamily="@font/permanent_marker"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="@string/note_board_head"
+        android:textColor="@color/white"
+        android:textSize="@dimen/head_text_size"
+        app:layout_constraintBottom_toTopOf="@id/guideline_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Översta guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <!-- Adapter-Container -->
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="@dimen/no_width"
+        android:layout_height="@dimen/no_height"
+        android:layout_marginHorizontal="@dimen/side_margin"
+        android:layout_marginVertical="@dimen/vertical_margin"
+        android:horizontalSpacing="@dimen/spacing"
+        android:numColumns="2"
+        android:verticalSpacing="@dimen/spacing"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline_top" />
+
+    <!-- Nedersta guideline -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+    <!-- Text för light-switch -->
+    <TextView
+        android:id="@+id/board_mode_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/light_mode_text"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/switch_light"
+        app:layout_constraintStart_toStartOf="@id/switch_light" />
+
+    <!-- Light-switch -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/switch_side"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:fontFamily="@font/permanent_marker"
+        android:textSize="@dimen/medium_size"
+        app:layout_constraintBottom_toBottomOf="@id/head_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_bottom" />
+
+    <!-- Fab, lägg till note -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/vertical_margin"
+        android:layout_marginEnd="@dimen/fab_side"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/small_elevation"
+        android:src="@drawable/add_icon"
+        app:backgroundTint="@color/black"
+        app:borderWidth="@dimen/border"
+        app:layout_constraintBottom_toBottomOf="@id/head_layout"
+        app:layout_constraintEnd_toEndOf="@id/head_layout"
+        app:layout_constraintTop_toTopOf="@id/guideline_bottom"
+        app:shapeAppearance="@style/CardView"
+        app:tint="@color/black"
+        android:contentDescription="@string/fab_add_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
